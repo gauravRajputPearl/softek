@@ -1,0 +1,47 @@
+.upperSection {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upperSection > p {
+  text-align: center;
+}
+.gaphandle {
+  gap: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .middleImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 300px;
+  }
+  .middleImage > img {
+    position: static !important;
+    top: 100px !important;
+    transform: none !important;
+    justify-content: center;
+    display: flex;
+    width: auto !important;
+    max-width: 300px;
+  }
+  .gaphandle {
+    gap: 0px !important;
+  }
+  .parentBox {
+    flex-direction: column;
+  }
+  .middleBoxes {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+}
